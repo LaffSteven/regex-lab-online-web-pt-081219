@@ -1,4 +1,5 @@
 def starts_with_a_vowel?(word)
+  # Checks beginning of the line for a capital or lowercase vowel
   if word.match(/^[AEIOU]|^[aeiou]/)
     true
   else
@@ -7,6 +8,7 @@ def starts_with_a_vowel?(word)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
+  # if any begins with 'un' and ends with 'ing'
   text.scan(/un\w+ing/)
 end
 
